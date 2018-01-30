@@ -1,10 +1,14 @@
-import fresh_tomatoes
-import media
+import fresh_tomatoes # importing the fresh_tomatoes webpage design
+import media # importing my media class file
 
+
+
+# Instantiating (i.e. creating objects) for my favorite movies using the media class
 air_force_one = media.Movie("Air Force One",
                             "The President of the U.S. must covertly fight back against terrorists that hijack his plane.",
                             "https://images-na.ssl-images-amazon.com/images/M/MV5BYTk5NWE2ZjAtZmRmOS00ZGYzLWI5ZmUtMDcwODI0YWY0MTRlL2ltYWdlXkEyXkFqcGdeQXVyNjQzNDI3NzY@._V1_.jpg",
                             "https://www.youtube.com/watch?v=jPYnVOIfNiU")
+
 
 rush_hour = media.Movie("Rush Hour",
                         "A Chinese and American detective must work together to rescue the Chinese Consul's daughter after a kidnapping.",
@@ -21,6 +25,8 @@ robin_hood = media.Movie("Robin Hood",
                          "https://images-na.ssl-images-amazon.com/images/M/MV5BYjUwMzhkM2ItMTU2OC00OTQ5LWJlMDUtMzRmYjc0NDUyNGVhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,670,1000_AL_.jpg",
                          "https://www.youtube.com/watch?v=c5Qph47c2uE")
 
+# Creating a list of my favorite movies
 movie_list = [air_force_one, rush_hour, firewall, robin_hood]
 
+# Calling the fresh tomatoes open_movies_page function and passing a list of my movies
 fresh_tomatoes.open_movies_page(movie_list)
