@@ -1,39 +1,26 @@
-import media
 import fresh_tomatoes
+import media
 
-toy_story = media.Movie("Toy Story",
-                        "A movie about a boy whose toys come alive.",
-                        "https://vignette.wikia.nocookie.net/disney/images/8/80/Toy_Story_-_Poster.jpg/revision/latest?cb=20150108180742",
-                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
+air_force_one = media.Movie("Air Force One",
+                            "The President of the U.S. must covertly fight back against terrorists that hijack his plane.",
+                            "https://images-na.ssl-images-amazon.com/images/M/MV5BYTk5NWE2ZjAtZmRmOS00ZGYzLWI5ZmUtMDcwODI0YWY0MTRlL2ltYWdlXkEyXkFqcGdeQXVyNjQzNDI3NzY@._V1_.jpg",
+                            "https://www.youtube.com/watch?v=jPYnVOIfNiU")
 
-print (toy_story.storyline)
+rush_hour = media.Movie("Rush Hour",
+                        "A Chinese and American detective must work together to rescue the Chinese Consul's daughter after a kidnapping.",
+                        "https://images-na.ssl-images-amazon.com/images/M/MV5BYWM2NDZmYmYtNzlmZC00M2MyLWJmOGUtMjhiYmQ2OGU1YTE1L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,678,1000_AL_.jpg",
+                        "https://www.youtube.com/watch?v=JMiFsFQcFLE")
 
-avatar = media.Movie("Avatar",
-                     "A marine on an alien planet",
-                     "https://mrmoviefiend.files.wordpress.com/2010/06/avatar-poster-10.jpg",
-                     "https://www.youtube.com/watch?v=d1_JBMrrYw8")
+firewall = media.Movie("Firewall",
+                       "A banker must cooperate when a heist and kidnapping threaten his family",
+                       "https://resizing.flixster.com/6jKlpvYh9C61B0zOx3bJRmYIo64=/206x305/v1.bTsxMTE3MTQzNztqOzE3Njc5OzEyMDA7ODAwOzEyMDA",
+                       "https://www.youtube.com/watch?v=w96aZhrK28w")
 
-school_of_rock = media.Movie("School of Rock",
-                             "A man pretends to be a substitute teacher and starts a rock band with the class",
-                             "https://i.ytimg.com/vi/eAry-ZV_gfs/movieposter.jpg",
-                             "https://www.youtube.com/watch?v=XCwy6lW5Ixc")
+robin_hood = media.Movie("Robin Hood",
+                         "An outlaw must work against a corrupt king who hypnotizes the previous king into a crusade.",
+                         "https://images-na.ssl-images-amazon.com/images/M/MV5BYjUwMzhkM2ItMTU2OC00OTQ5LWJlMDUtMzRmYjc0NDUyNGVhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,670,1000_AL_.jpg",
+                         "https://www.youtube.com/watch?v=c5Qph47c2uE")
 
-ratatouille = media.Movie("Ratatouille",
-                             "A rat attempts to become a chef at a fancy French restaurant",
-                             "https://images-na.ssl-images-amazon.com/images/I/51MJQKcJVFL._SY450_.jpg",
-                             "https://www.youtube.com/watch?v=c3sBBRxDAqk")
+movie_list = [air_force_one, rush_hour, firewall, robin_hood]
 
-midnight_in_paris = media.Movie("Midnight in Paris",
-                             "An aspiring novelist vacationing in Paris encounters revelers who take him back in time to the Jazz Age and incite dissatisfaction of the present in him.",
-                             "http://t3.gstatic.com/images?q=tbn:ANd9GcTk3ssys2bKM5-U6XMgvoD8yVoS5Io2YKg_1xA6x6GA8mKuuqID",
-                             "https://www.youtube.com/watch?v=FAfR8omt-CY")
-
-hunger_games = media.Movie("Hunger Games",
-                             "In a future dystopia a young girl must fight to the death in place of her sister, in a grueling free for all survival challenge.",
-                             "https://2982-presscdn-29-70-pagely.netdna-ssl.com/wp-content/uploads/2015/11/The-Hunger-Games-Poster1.jpg",
-                             "https://www.youtube.com/watch?v=4S9a5V9ODuY")
-
-## Creating array of movies for input of open_movie_page()
-movies = [toy_story, avatar, school_of_rock, ratatouille, midnight_in_paris, hunger_games]
-
-fresh_tomatoes.open_movies_page(movies)
+fresh_tomatoes.open_movies_page(movie_list)
